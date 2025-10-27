@@ -20,6 +20,9 @@
   --style-7-background: #9effff;
   --style-8-background: #b69cff;
   --surface: #ffffff;
+  --accent: #F59E0B;
+  --shadow-0: -5px 0px 10px 0 rgba(0,0,0,1);
+  --shadow-1: 0px 5px 10px 0 rgba(0,0,0,1);
 
   --radius: 12px;
   --radius-lg: 16px;

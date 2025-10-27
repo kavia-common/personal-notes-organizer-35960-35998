@@ -1,6 +1,4 @@
 import React, { useMemo, useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import Topbar from '../components/Topbar';
 import NoteList from '../components/NoteList';
 import SearchBar from '../components/SearchBar';
 import { useNotes } from '../state/NotesContext';
@@ -9,9 +7,7 @@ import './pages.css';
 
 /**
  * PUBLIC_INTERFACE
- * NotesListPage displays all notes with search and tag filtering.
- * Props: none
- * Returns layout with Sidebar, Topbar, SearchBar, Tag filters and NoteList.
+ * NotesListPage shows search and tag filters with the list of notes, inside Layout.
  */
 export default function NotesListPage() {
   const { notes, allTags } = useNotes();
@@ -28,21 +24,17 @@ export default function NotesListPage() {
   }, [notes, query, activeTag]);
 
   return (
-    <div className="app-shell">
-      <Sidebar />
-      <main className="main-pane">
-        <Topbar title="All Notes" />
-        <div className="toolbar">
-          <SearchBar value={query} onChange={setQuery} placeholder="Search notes..." />
-          <div className="tags-row">
-            <TagPill label="All" active={!activeTag} onClick={() => setActiveTag('')} />
-            {allTags.map(tag => (
-              <TagPill key={tag} label={tag} active={activeTag === tag} onClick={() => setActiveTag(tag)} />
-            ))}
-          </div>
+    <>
+      <div className="toolbar">
+        <SearchBar value={query} onChange={setQuery} placeholder="Search notes..." />
+        <div className="tags-row">
+          <TagPill label="All" active={!activeTag} onClick={() => setActiveTag('')} />
+          {allTags.map(tag => (
+            <TagPill key={tag} label={tag} active={activeTag === tag} onClick={() => setActiveTag(tag)} />
+          ))}
         </div>
-        <NoteList notes={filtered} />
-      </main>
-    </div>
+      </div>
+      <NoteList notes={filtered} />
+    </>
   );
 }

@@ -1,0 +1,274 @@
+/* Import design tokens */
+@import url("./common.css");
+
+/* Screen container (root frame) */
+.home-screen-125-171 {
+  position: relative;
+  width: 414px;
+  height: 1100px;
+  overflow: hidden;
+  background: var(--style-0-background);
+  border-radius: var(--style-0-border-radius);
+  font-family: var(--typo-13-family);
+}
+
+/* Utility to apply z-index by order */
+[data-z] { position: absolute; }
+
+/* Rectangle 8 (style_1) */
+#el-125-175 {
+  left: 24px;  /* 1626 - 1602 */
+  top: 143px;  /* -680 - (-823) = 143 */
+  width: 365px;
+  height: 157px;
+  background: var(--style-1-background);
+  border-radius: var(--style-1-border-radius);
+  z-index: 1;
+}
+
+/* Book Review text (typo_13) */
+#el-125-176 {
+  left: 69px;   /* 1671 - 1602 */
+  top: 168px;   /* -655 - (-823) */
+  width: 270px;
+  height: 103px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 2;
+}
+
+/* Text placeholder (empty) */
+#el-125-177 {
+  left: 69px;
+  top: 190px;
+  width: 0px;
+  height: 32px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 3;
+}
+
+/* Rectangle 11 (style_3) */
+#el-125-178 {
+  left: 24px;
+  top: 323px; /* -500 - (-823) */
+  width: 365px;
+  height: 123px;
+  background: var(--style-3-background);
+  border-radius: var(--style-3-border-radius);
+  z-index: 4;
+}
+
+/* Animes produced by Ufotable text (typo_13) */
+#el-125-179 {
+  left: 69px;
+  top: 352px; /* -471 - (-823) */
+  width: 254px;
+  height: 64px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 5;
+}
+
+/* Rectangle 10 (style_4) */
+#el-125-180 {
+  left: 24px;
+  top: 471px; /* -352 - (-823) */
+  width: 365px;
+  height: 110px;
+  background: var(--style-4-background);
+  border-radius: var(--style-4-border-radius);
+  z-index: 6;
+}
+
+/* Mangas planned to read (typo_13) */
+#el-125-181 {
+  left: 69px;
+  top: 494px; /* -329 - (-823) */
+  width: 259px;
+  height: 67px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 7;
+}
+
+/* Hero Text: Notes (typo_14) */
+#el-125-186 {
+  left: 24px;   /* 1626 - 1602 */
+  top: 47px;    /* -776 - (-823) */
+  width: 115px;
+  height: 59px;
+  color: var(--typo-14-color);
+  font-family: var(--typo-14-family);
+  font-size: var(--typo-14-size);
+  font-weight: var(--typo-14-weight);
+  line-height: var(--typo-14-line-height);
+  letter-spacing: var(--typo-14-letter-spacing);
+  text-align: var(--typo-14-text-align);
+  z-index: 8;
+}
+
+/* Button 1 background (style_6) */
+#el-125-187 {
+  left: 339px; /* 1941 - 1602 */
+  top: 51px;   /* -772 - (-823) */
+  width: 50px;
+  height: 50px;
+  background: var(--style-6-background);
+  border-radius: var(--style-6-border-radius);
+  z-index: 9;
+}
+
+/* info_outline component container */
+#el-125-188 {
+  left: 352px; /* 1954 - 1602 */
+  top: 64px;   /* -759 - (-823) */
+  width: 24px;
+  height: 24px;
+  z-index: 11;
+}
+
+/* info_outline icon vector (inner icon image path used) */
+#el-I125-188-8-9 {
+  position: absolute;
+  left: 2px;   /* 1956 - 1954 */
+  top: 2px;    /* -757 - (-759) */
+  width: 20.0000019073px;
+  height: 20px;
+  z-index: 12;
+}
+
+/* Button 4 background (style_6) */
+#el-125-189 {
+  left: 268px; /* 1870 - 1602 */
+  top: 51px;   /* -772 - (-823) */
+  width: 50px;
+  height: 50px;
+  background: var(--style-6-background);
+  border-radius: var(--style-6-border-radius);
+  z-index: 13;
+}
+
+/* search component container */
+#el-125-190 {
+  left: 281px; /* 1883 - 1602 */
+  top: 64px;   /* -759 - (-823) */
+  width: 24px;
+  height: 24px;
+  z-index: 14;
+}
+
+/* search icon vector inner */
+#el-I125-190-8-12 {
+  position: absolute;
+  left: 2.9993896484px; /* 1885.999389... - 1883 */
+  top: 2.9993896484px;  /* -756.000610... - (-759) */
+  width: 17.0481281281px;
+  height: 17.0581245422px;
+  z-index: 15;
+}
+
+/* Rectangle 13 (style_7) */
+#el-136-37 {
+  left: 24px;
+  top: 606px; /* -217 - (-823) */
+  width: 365px;
+  height: 120px;
+  background: var(--style-7-background);
+  border-radius: var(--style-7-border-radius);
+  z-index: 16;
+}
+
+/* Rectangle 9 (style_8) */
+#el-136-38 {
+  left: 24px;
+  top: 751px; /* -72 - (-823) */
+  width: 365px;
+  height: 100px;
+  background: var(--style-8-background);
+  border-radius: var(--style-8-border-radius);
+  z-index: 17;
+}
+
+/* Awesome tweets collection (typo_13) */
+#el-136-39 {
+  left: 69px;
+  top: 632px; /* -191 - (-823) */
+  width: 287px;
+  height: 68px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 18;
+}
+
+/* List of free & open source apps (typo_13) */
+#el-136-40 {
+  left: 69px;
+  top: 768px; /* -55 - (-823) */
+  width: 297px;
+  height: 66px;
+  color: var(--typo-13-color);
+  font-family: var(--typo-13-family);
+  font-size: var(--typo-13-size);
+  font-weight: var(--typo-13-weight);
+  line-height: var(--typo-13-line-height);
+  letter-spacing: var(--typo-13-letter-spacing);
+  text-align: var(--typo-13-text-align);
+  z-index: 19;
+}
+
+/* Ellipse 1 (style_39 with shadows 0 and 1) */
+#el-125-191 {
+  left: 309px; /* 1911 - 1602 */
+  top: 777px;  /* -46 - (-823) */
+  width: 70px;
+  height: 70px;
+  background: var(--style-39-background);
+  border-radius: 50%;
+  box-shadow: var(--shadow-0), var(--shadow-1);
+  z-index: 20;
+}
+
+/* add component container */
+#el-125-192 {
+  left: 320px; /* 1922 - 1602 */
+  top: 788px;  /* -35 - (-823) */
+  width: 48px;
+  height: 48px;
+  z-index: 21;
+}
+
+/* add icon inner vector */
+#el-I125-192-115-19 {
+  position: absolute;
+  left: 10px; /* 1932 - 1922 */
+  top: 10px;  /* -25 - (-35) */
+  width: 28px;
+  height: 28px;
+  z-index: 22;
+}
